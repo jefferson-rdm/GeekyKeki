@@ -1,0 +1,38 @@
+<nav>
+  <img class="nav-logo" src="/img/logo.png" alt="GeekyKeki">
+  <ul class="nav-links" >
+    <li><a href="">Quienes somos</a></li>
+    <li><a href="">Servicios</a></li>
+    <li><a href="">Prouctos</a></li>
+    <li><a href="">Contactanos</a></li>
+  </ul>
+</nav>
+
+<style lang="scss">
+  nav {
+    background-color: var(--black);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 50px;
+    height: 88px;
+  }
+  .nav-logo {
+    height: 100%;
+  }
+  .nav-links {
+    width: 40%;
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+
+    a {
+        transition: box-shadow 1s ease-in-out;
+        color: var(--white);
+        will-change: border-bottom;
+    }
+    a:hover {
+      border-bottom: 1px solid var(--pink);
+    }
+  }
+</style>

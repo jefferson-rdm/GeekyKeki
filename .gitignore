@@ -6,6 +6,9 @@
 # Ignore content collection generated files
 .astro
 
+# imagenes
+public/img/
+
 ### Node ###
 # Logs
 logs
