@@ -1,0 +1,56 @@
+<section class="productos">
+  <h2>Algunos productos</h2>
+  <div>
+    <img src="/img/audifonos.jpeg" alt="audifonos">
+    <img src="/img/alfombrilla.jpg" alt="alfomrbilla para mouse">
+    <img src="/img/luces.jpeg" alt="tira luces led">
+    <img src="/img/microfono.jpg" alt="mouse">
+    <img src="/img/teclado.jpg" alt="teclado">
+  </div>
+</section>
+
+<style lang="scss">
+  .productos {
+    padding: 50px 8%;
+    //height: 900px;
+
+    h2 {
+      font-size: x-large;
+      font-family: var(--font-secondary);
+      margin-bottom: 20px;
+    }
+
+    div {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(17, 1fr);
+      grid-template-rows: repeat(2, 400px);
+    }
+
+    img {
+      width: 100%;
+      border-radius: 12px;
+      transition: box-shadow .2s ease-in-out;
+    }
+
+    img:hover {
+      box-shadow: 0 0 26px green;
+    }
+  }
+
+  div img:nth-child(1) {
+    grid-area: 1 / 1 / 2 / 6;
+  }
+  div img:nth-child(2) {
+    grid-area: 1 / 7 / 2 / 12;
+  }
+  div img:nth-child(3) {
+    grid-area: 1 / 13 / 2 / 18;
+  }
+  div img:nth-child(4) {
+    grid-area: 2 / 1 / 3 / 9;
+  }
+  div img:nth-child(5) {
+    grid-area: 2 / 10 / 5 / 18;
+  }
+</style>
