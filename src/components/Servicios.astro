@@ -1,0 +1,31 @@
+---
+import Card from './Card.astro';
+---
+
+<section class="servicios">
+  <h2>Nuestros servicios</h2>
+  <div>
+    <Card img="/img/componentes.jpeg" alt="componentes" titulo="Ventas de accesorios informáticos" texto="Encuentra los accesorios de computadora que necesitas para tu jugabilidad" />
+    <Card img="/img/garantia.jpg" alt="teclado desarmado" titulo="Garantia en periféricos" texto="Brindamos una garantía sólida que respalda cada uno de nuestros productos y servicios." />
+    <Card img="/img/cables.jpg" alt="componentes" titulo="Asesoramiento en selección de periféricos" texto="Recibe asesoramiento personalizado para elegir los periféricos perfectos para tus necesidades" />
+  </div>
+</section>
+
+<style lang="scss">
+  .servicios {
+    background-color: var(--white);
+    padding: 50px 8%;
+
+    h2 {
+      font-family: var(--font-secondary);
+      margin-bottom: 16px;
+    }
+
+    div {
+      display: grid;
+      grid-auto-flow: column;
+      grid-template-columns: 1fr / 1fr / 1fr;
+      gap: 4%;
+    }
+  }
+</style>
